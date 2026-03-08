@@ -763,17 +763,17 @@
   <nav class="topbar" aria-label="Health categories">
     <button class="tab-button active" data-tab="overall">Overall</button>
     <button class="tab-button" data-tab="recovery">Recovery</button>
-    <button class="tab-button" data-tab="nutrition">Nutrition</button>
-    <button class="tab-button" data-tab="activity">Activity</button>
     <button class="tab-button" data-tab="mental">Mental</button>
+    <button class="tab-button" data-tab="activity">Activity</button>
+    <button class="tab-button" data-tab="nutrition">Nutrition</button>
     <button class="tab-button about-tab" data-tab="settings">Settings</button>
   </nav>
 
   <section class="tab-panel active" id="panel-overall">
     <div class="panel-header">
       <div class="panel-copy">
-        <h1 class="info-trigger">Overall Health Score<span class="icon" tabindex="0" data-tooltip="This summary blends your Recovery, Nutrition, Activity and Mental scores into a single view so you can see your current baseline quickly and decide where the biggest gains are likely to come from.">i</span></h1>
-        <p class="panel-blurb">Use this page as your high-level summary. Expand grouped categories when you want more detail, then use the other tabs to improve the habits that are pulling your overall score down most.</p>
+        <h1 class="info-trigger">Overall Health Score<span class="icon" tabindex="0" data-tooltip="This summary blends your Recovery, Mental, Activity and Nutrition scores into a single view so you can quickly see where your current habits are strongest, where the biggest deficits are, and which changes are most likely to improve both day-to-day vitality and broader long-term health.">i</span></h1>
+        <p class="panel-blurb">Use this page as your high-level summary. It is designed to cut through hype, highlight the most meaningful health drivers first, and show where practical changes are likely to matter most for both how you feel and how you are tracking overall.</p>
       </div>
       <div class="header-side">
         <div class="score-card">
@@ -807,8 +807,8 @@
   <section class="tab-panel" id="panel-recovery">
     <div class="panel-header">
       <div class="panel-copy">
-        <h2 class="info-trigger">Recovery<span class="icon" tabindex="0" data-tooltip="Recovery is the set of habits that allows your body and mind to restore performance, adapt to stress and stay resilient, with sleep doing most of the heavy lifting. Strong recovery supports energy, mood, immunity, training adaptation and cognitive performance because sleep and circadian stability help regulate hormones, tissue repair and nervous-system recovery.">i</span></h2>
-        <p>Recovery is led by sleep quality and duration, which account for most of the body’s ability to rest, repair and perform well. Other practices can help at the margins, but they are far less influential than getting sleep and basic recovery habits right.</p>
+        <h2 class="info-trigger">Recovery<span class="icon" tabindex="0" data-tooltip="Recovery covers the habits that allow the body and mind to restore function, adapt to stress and maintain resilience, with sleep doing most of the heavy lifting. Strong recovery supports energy, mood, cognition, immunity and long-term health because sleep and circadian stability regulate repair, hormones and nervous-system recovery.">i</span></h2>
+        <p>Recovery is driven primarily by sleep duration, sleep quality and circadian habits. This section focuses on the highest-value behaviours first, so the biggest contributors to daily energy, training response and broader health are given the most weight.</p>
       </div>
       <div class="score-card split-score">
         <div class="score-metric">
@@ -843,8 +843,8 @@
   <section class="tab-panel" id="panel-nutrition">
     <div class="panel-header">
       <div class="panel-copy">
-        <h2 class="info-trigger">Nutrition<span class="icon" tabindex="0" data-tooltip="Nutrition is the quality, quantity and timing of food and fluid intake that supports health and day-to-day function. Good nutrition helps body composition, energy stability, recovery, metabolic health and long-term disease risk because food provides the energy, protein, fibre and micronutrients required for repair, regulation and performance.">i</span></h2>
-        <p>Nutrition supports energy, performance, recovery and long-term health. This tab focuses on broad, evidence-informed habits that matter most for general wellbeing. Aim for consistency first, then refine details if you need to.</p>
+        <h2 class="info-trigger">Nutrition<span class="icon" tabindex="0" data-tooltip="Nutrition covers the quality, quantity and pattern of food and fluid intake that support health, body composition, energy stability and long-term disease risk. This section prioritises the broad dietary behaviours with the strongest practical evidence rather than niche rules, supplement marketing or influencer-driven food anxiety.">i</span></h2>
+        <p>Nutrition here is framed around the fundamentals that move both vitality and long-term health markers most: energy balance, food quality, fibre, protein, alcohol, and basic dietary pattern. The goal is practical, defensible guidance rather than nutritional perfectionism.</p>
       </div>
       <div class="score-card split-score">
         <div class="score-metric">
@@ -879,8 +879,8 @@
   <section class="tab-panel" id="panel-activity">
     <div class="panel-header">
       <div class="panel-copy">
-        <h2 class="info-trigger">Activity<span class="icon" tabindex="0" data-tooltip="Activity covers purposeful physical movement, including resistance training, cardio and functional movement. It improves cardiovascular fitness, strength, bone density, insulin sensitivity, mobility and long-term independence because repeated physical demand drives adaptation across muscles, bones, the heart, lungs and nervous system.">i</span></h2>
-        <p>Physical activity has wide benefits for health and wellbeing. You do not need to do everything at once. Build a balanced mix over time, prioritise consistency, and choose forms of training you can stick with.</p>
+        <h2 class="info-trigger">Activity<span class="icon" tabindex="0" data-tooltip="Activity covers the major forms of movement that support health and physical capacity, including resistance training, cardio, daily movement and functional work. It improves cardiovascular fitness, strength, metabolic health, mobility, bone health and long-term independence because repeated physical demand drives adaptation across the body.">i</span></h2>
+        <p>This section balances fitness, function and health protection. It gives weight to the exercise patterns most consistently associated with strength, aerobic capacity, lower sedentary time and long-term physical resilience, without pretending every small training detail matters equally.</p>
       </div>
       <div class="score-card split-score">
         <div class="score-metric">
@@ -915,8 +915,8 @@
   <section class="tab-panel" id="panel-mental">
     <div class="panel-header">
       <div class="panel-copy">
-        <h2 class="info-trigger">Mental<span class="icon" tabindex="0" data-tooltip="Mental wellbeing covers habits and conditions that support resilience, emotional stability, motivation and day-to-day quality of life. Strong mental wellbeing improves stress tolerance, mood, attention and social functioning because healthy routines, relationships and restorative environments help regulate the nervous system and reduce chronic stress load.">i</span></h2>
-        <p>Mental wellbeing is a core part of overall vitality, influencing energy, motivation and resilience. This tab focuses on broad habits that support general wellbeing rather than diagnosis or personalised mental-health care.</p>
+        <h2 class="info-trigger">Mental<span class="icon" tabindex="0" data-tooltip="Mental health here focuses on everyday environmental and behavioural drivers of resilience, emotional stability and quality of life, such as social connection, occupational load, media exposure, nature and stress regulation. The goal is to capture practical influences on wellbeing without drifting into pseudoscience or pretending this replaces clinical care.">i</span></h2>
+        <p>Mental health is treated here as a major health domain, not an optional extra. This section focuses on practical, non-clinical factors that influence stress load, resilience, social wellbeing and day-to-day functioning.</p>
       </div>
       <div class="score-card split-score">
         <div class="score-metric">
@@ -984,25 +984,25 @@
 
       <div class="about-panel" id="about-panel">
         <div class="about-section">
-          <p>This dashboard is designed to highlight the health behaviours that matter most across recovery, nutrition, activity and mental wellbeing. It is not an optimisation tool. Its purpose is to provide clear, evidence-informed guidance that helps you focus on the habits most likely to improve energy, resilience, health and quality of life.</p>
+        <p>This dashboard is designed to highlight the health behaviours that matter most across recovery, mental health, activity and nutrition. Its purpose is to cut through fashionable but low-value advice and point attention toward the evidence-based habits most likely to improve energy, resilience, physical function, long-term health and quality of life.</p>
         </div>
 
         <div class="about-section">
           <h3>How to Use</h3>
-          <p>Each tab contains either a set of key behaviours or grouped sub-categories. Every item has a weight that reflects its relative contribution within that category. The app provides two reference points for self-assessment:</p>
+          <p>Each tab contains either a set of key behaviours or grouped sub-categories. Every item has a weight that reflects its relative contribution within that category based on practical importance, not trendiness. The app provides two reference points for self-assessment:</p>
           <ul class="about-list">
-            <li><strong>Optimal</strong>: the strongest evidence-based target for that behaviour.</li>
-            <li><strong>80/20</strong>: a simpler, more practical standard that captures most of the benefit.</li>
+            <li><strong>Optimal</strong>: a strong evidence-based target associated with better health, function or resilience.</li>
+            <li><strong>80/20</strong>: a simpler, more achievable standard that still captures much of the benefit for most people.</li>
           </ul>
         </div>
 
         <div class="about-section">
-          <p>Enter a score from 0 to 100 for each behaviour based on how closely your current habits match the guidance. The app multiplies your score by each item’s weight, totals the results for the category, and then combines category scores into the overall score. Use the overall tab to spot the largest opportunities first.</p>
+          <p>Enter a score from 0 to 100 for each behaviour based on how closely your current habits match the guidance. The app multiplies your score by each item’s weight, totals the results for the category, and then combines category scores into the overall score. Use the overall tab to identify the changes most likely to improve both daily vitality and broader health outcomes first.</p>
         </div>
 
         <div class="about-section">
           <h3>Important Note</h3>
-          <p>The information in this app is for general educational purposes only. It is not personalised medical, nutritional or psychological advice. Individual needs vary, so consult an appropriately qualified professional before making major changes to your diet, exercise, recovery or lifestyle habits.</p>
+          <p>The information in this app is for general educational purposes only. It is not personalised medical, nutritional or psychological advice, and it does not diagnose or treat illness. Individual needs vary, so consult an appropriately qualified professional before making major changes to your diet, exercise, recovery, workload or lifestyle habits.</p>
         </div>
       </div>
     </div>
@@ -1018,29 +1018,28 @@ const categories = {
     groups: [
       {
         name: "Sleep",
-        weight: 0.9,
+        weight: 0.95,
         commentary: "Sleep is the main driver of recovery because this is when the body performs most of its repair, hormonal regulation, nervous-system recovery and memory consolidation. Better sleep improves energy, mood, immunity, training adaptation and long-term health.",
         factors: [
-          { factor: "Sleep duration", relativeWeight: 0.37, optimal: "7-9 hours", eighty20: "6.5-7 hours", commentary: "Enough total sleep gives the body time to complete the repair and regulation processes that underpin performance and health.", defaultScore: 80 },
-          { factor: "Morning light exposure", relativeWeight: 0.14, optimal: "10-15 minutes outdoors soon after waking", eighty20: "5 minutes within 2-3 hours", commentary: "Morning light helps anchor circadian rhythm, which improves alertness by day and sleepiness at night.", defaultScore: 80 },
-          { factor: "Consistent wake time", relativeWeight: 0.11, optimal: "+/-15 minutes daily", eighty20: "+/-30 minutes", commentary: "A stable wake time helps set the sleep-wake cycle and often improves sleep quality more reliably than chasing a perfect bedtime alone.", defaultScore: 80 },
-          { factor: "Evening light reduction", relativeWeight: 0.09, optimal: "Dim lights 60-90 minutes before bed", eighty20: "Reduce bright light 30-60 minutes before bed", commentary: "Reducing evening light lowers circadian disruption and supports a more natural rise in melatonin.", defaultScore: 80 },
-          { factor: "Stress management before bed", relativeWeight: 0.06, optimal: "Low stress with deliberate wind-down practice", eighty20: "5-10 minutes of calming activity", commentary: "Lower pre-sleep stress reduces arousal and makes it easier to fall asleep and stay asleep.", defaultScore: 80 },
-          { factor: "Consistent bedtime", relativeWeight: 0.08, optimal: "+/-15 minutes nightly", eighty20: "+/-30-45 minutes", commentary: "A consistent bedtime supports more stable sleep timing and better sleep architecture over time.", defaultScore: 80 },
-          { factor: "Room temperature", relativeWeight: 0.05, optimal: "17-20 C (63-68 F)", eighty20: "20-22 C acceptable", commentary: "A cooler room supports the drop in body temperature that helps sleep onset and sleep maintenance.", defaultScore: 80 },
-          { factor: "Bedroom darkness", relativeWeight: 0.04, optimal: "Pitch black", eighty20: "Minimal light or a sleep mask", commentary: "Darkness reduces sleep disruption and supports healthy circadian signalling.", defaultScore: 80 },
-          { factor: "Caffeine timing", relativeWeight: 0.03, optimal: "None within 8-10 hours of bed", eighty20: "None within 6 hours", commentary: "Late caffeine can reduce sleep depth and delay sleep onset even when you still feel tired.", defaultScore: 80 },
-          { factor: "Electronic device use", relativeWeight: 0.02, optimal: "Avoid screens 60-90 minutes before bed", eighty20: "Reduce brightness 30-60 minutes before bed", commentary: "Screens often combine stimulating content with bright light, which can make winding down harder.", defaultScore: 80 },
-          { factor: "Alcohol timing", relativeWeight: 0.01, optimal: "Avoid within 3-4 hours of bed", eighty20: "Occasional moderate intake 2 hours before bed", commentary: "Alcohol can fragment sleep and reduce sleep quality even if it initially makes you feel sleepy.", defaultScore: 80 }
+          { factor: "Sleep duration", relativeWeight: 45 / 95, optimal: "7-9 hours of uninterrupted sleep", eighty20: "6.5-7 hours", commentary: "Enough total sleep is the main recovery driver because it gives the body time for repair, hormonal regulation and nervous-system recovery.", defaultScore: 80 },
+          { factor: "Sleep Quality / Continuity", relativeWeight: 10 / 95, optimal: "Sleep efficiency >85% or <1 unrefreshed night/week", eighty20: "N/A", commentary: "Sleep quality matters alongside duration; frequent awakenings or routinely unrefreshing sleep can blunt the benefit of enough time in bed.", defaultScore: 80 },
+          { factor: "Morning light exposure", relativeWeight: 10 / 95, optimal: "10-15 minutes outdoors within 1 hour of waking", eighty20: "5 minutes within 2-3 hours of waking", commentary: "Morning light helps anchor circadian rhythm, improving daytime alertness and making sleep onset easier later.", defaultScore: 80 },
+          { factor: "Alcohol timing", relativeWeight: 7 / 95, optimal: "Avoid alcohol within 3-4 hours of bed", eighty20: "Occasional moderate intake >=2 hours before bed", commentary: "Alcohol can fragment sleep and reduce sleep quality even if it initially makes you feel sleepy.", defaultScore: 80 },
+          { factor: "Consistent wake time", relativeWeight: 7 / 95, optimal: "Wake time consistent within +/-15 minutes daily", eighty20: "Wake time within +/-30 minutes", commentary: "A stable wake time helps set the sleep-wake cycle and often improves sleep quality more reliably than chasing a perfect bedtime alone.", defaultScore: 80 },
+          { factor: "Caffeine timing", relativeWeight: 6 / 95, optimal: "Avoid high-dose caffeine within 10-12 hours of bed", eighty20: "Moderate caffeine allowed 4-6 hours before bed", commentary: "Late caffeine can reduce sleep depth and delay sleep onset even when you still feel tired.", defaultScore: 80 },
+          { factor: "Evening light / device reduction", relativeWeight: 4 / 95, optimal: "Dim lights and avoid screens 60-90 minutes before bed", eighty20: "Reduce brightness/screens 30-60 minutes before bed", commentary: "Reducing evening light and device exposure lowers circadian disruption and can make winding down easier.", defaultScore: 80 },
+          { factor: "Stress management before bed", relativeWeight: 4 / 95, optimal: "Low stress with deliberate wind-down practice", eighty20: "5-10 minutes of calming activity", commentary: "Lower pre-sleep stress reduces arousal and makes it easier to fall asleep and stay asleep.", defaultScore: 80 },
+          { factor: "Room temperature", relativeWeight: 1 / 95, optimal: "17-20 C (63-68 F)", eighty20: "20-22 C acceptable", commentary: "A cooler room supports the drop in body temperature that helps sleep onset and sleep maintenance.", defaultScore: 80 },
+          { factor: "Bedroom darkness", relativeWeight: 1 / 95, optimal: "Pitch-black bedroom", eighty20: "Minimal light acceptable", commentary: "A darker sleep environment reduces disruption and supports healthy circadian signalling.", defaultScore: 80 }
         ]
       },
       {
         name: "Active Recovery",
-        weight: 0.1,
+        weight: 0.05,
         commentary: "Active recovery includes low-fatigue habits around training that can modestly improve how well you recover between sessions. These behaviours may help, but they matter far less than sleep.",
         factors: [
-          { factor: "Post-workout active recovery", relativeWeight: 0.5, optimal: "10-15 minutes of easy walking, cycling or mobility after each session", eighty20: "5-10 minutes after 70-80% of sessions", commentary: "Easy movement after training may reduce stiffness, maintain circulation and help you feel fresher for the next session.", defaultScore: 75 },
-          { factor: "Post-exercise nutrition / protein timing", relativeWeight: 0.5, optimal: "20-30 g of protein within 30-60 minutes; add carbohydrate after hard or long cardio", eighty20: "15-20 g of protein within 2 hours after most sessions", commentary: "Post-exercise nutrition supports muscle repair and helps replenish energy stores, especially when training volume is higher.", defaultScore: 75 }
+          { factor: "Post-workout active recovery", relativeWeight: 3 / 5, optimal: "10-15 minutes of easy walking/cycling/mobility after each session", eighty20: "5-10 minutes after ~70-80% of sessions", commentary: "Easy movement after training may reduce stiffness, maintain circulation and help you feel fresher for the next session.", defaultScore: 75 },
+          { factor: "Post-exercise nutrition / protein timing", relativeWeight: 2 / 5, optimal: "20-30 g protein within 30-60 minutes post-exercise (add carbs after long/hard cardio)", eighty20: "15-20 g protein within ~2 hours after most sessions", commentary: "Post-exercise nutrition supports muscle repair and helps replenish energy stores, especially when training volume is higher.", defaultScore: 75 }
         ]
       }
     ]
@@ -1050,11 +1049,15 @@ const categories = {
     scoreElementId: "nutrition-score",
     tableBodyId: "nutrition-table-body",
     factors: [
-      { factor: "Calories / energy intake", weight: 0.35, optimal: "Eat within +/-10% of maintenance or goal", eighty20: "Eat within +/-15-20% of goal", commentary: "Calorie balance strongly influences body weight, energy levels and metabolic adaptation.", defaultScore: 75 },
-      { factor: "Protein intake", weight: 0.25, optimal: "1.6-2.2 g/kg/day", eighty20: "1.2-1.6 g/kg/day", commentary: "Adequate protein supports muscle repair, recovery, satiety and body composition.", defaultScore: 75 },
-      { factor: "Micronutrient status", weight: 0.2, optimal: "Track intake to meet RDIs", eighty20: "Roughly 2 fruit, 5 veg and lean protein daily", commentary: "Good micronutrient coverage supports immune function, recovery and overall wellbeing; simple whole-food habits capture most of the benefit.", defaultScore: 75 },
-      { factor: "Hydration", weight: 0.1, optimal: "About 3 L total water per day", eighty20: "About 2-2.5 L fluids per day", commentary: "Hydration supports digestion, concentration, energy and general physical function.", defaultScore: 75 },
-      { factor: "Meal timing / distribution", weight: 0.1, optimal: "Spread protein and energy evenly across meals", eighty20: "Balanced meals 2-3 times per day", commentary: "Reasonable meal structure can help support steadier energy and better nutrient use across the day.", defaultScore: 75 }
+      { factor: "Calories / energy intake", weight: 0.24, optimal: "Eat within +/-10% of maintenance or goal", eighty20: "Roughly align intake with body-weight goals and avoid chronic overeating", commentary: "Energy intake remains the main driver of body-weight change and strongly affects energy balance, recovery and long-term adherence.", defaultScore: 75 },
+      { factor: "Limit ultra-processed foods", weight: 0.18, optimal: "Base diet primarily on minimally processed foods; UPFs rarely consumed", eighty20: "Keep ultra-processed foods to a minority of intake (approx <25-30% of calories)", commentary: "Keeping ultra-processed foods low generally improves diet quality, appetite regulation and the odds of meeting nutrition needs without excess calories.", defaultScore: 75 },
+      { factor: "Dietary fiber intake", weight: 0.16, optimal: ">=30 g/day from whole foods (vegetables, fruit, legumes, whole grains)", eighty20: "Approx 20-25 g/day", commentary: "Higher fiber intake supports gut health, satiety, blood sugar control and overall dietary quality, especially when it comes from whole foods.", defaultScore: 75 },
+      { factor: "Protein intake", weight: 0.15, optimal: "1.6-2.2 g/kg/day", eighty20: "~1.2-1.6 g/kg/day or include protein at most meals", commentary: "Adequate protein supports muscle repair, recovery, satiety and body composition, especially when training or dieting.", defaultScore: 75 },
+      { factor: "Alcohol intake", weight: 0.12, optimal: "Preferably none", eighty20: "Stay within low-risk drinking guidelines (generally <=1 drink/day average and avoid binge drinking)", commentary: "Alcohol adds little nutritional value and can impair sleep, recovery, appetite regulation and long-term health when intake rises.", defaultScore: 75 },
+      { factor: "Processed meat limitation", weight: 0.07, optimal: "Avoid or keep intake very minimal (<1 serving/week)", eighty20: "Limit to occasional consumption", commentary: "Keeping processed meat intake very low supports overall dietary quality and aligns with lower long-term health risk.", defaultScore: 75 },
+      { factor: "Micronutrient status", weight: 0.05, optimal: "Meet recommended daily intakes across vitamins and minerals", eighty20: "Consume a varied diet including vegetables, fruit, whole grains, and protein sources daily", commentary: "Micronutrient coverage supports immune function, recovery and general health, and dietary variety is the most practical way to cover the basics.", defaultScore: 75 },
+      { factor: "Hydration", weight: 0.02, optimal: "Maintain adequate hydration (~2-3 L total fluids/day depending on climate and activity)", eighty20: "Drink regularly and avoid persistent thirst", commentary: "Hydration supports concentration, physical performance, digestion and day-to-day function, but exact needs vary with climate, body size and activity.", defaultScore: 75 },
+      { factor: "Meal timing / distribution", weight: 0.01, optimal: "Distribute protein and energy across 3-4 meals", eighty20: "Avoid very large single meals; include protein across at least 2 meals", commentary: "Meal distribution matters less than core intake quality, but a more even pattern can support steadier energy, appetite control and practical protein intake.", defaultScore: 75 }
     ]
   },
   activity: {
@@ -1064,32 +1067,40 @@ const categories = {
     groups: [
       {
         name: "Resistance Training",
-        weight: 0.5,
-        commentary: "Resistance training is exercise performed against load, such as weights, machines or progressive bodyweight work. It supports strength, muscle mass, bone density, metabolic health and long-term physical capacity because repeated mechanical tension drives muscular and neural adaptation.",
+        weight: 0.47,
+        commentary: "Resistance training covers exercise against load, such as weights, machines or progressively harder bodyweight work. It supports strength, muscle mass, bone density and long-term physical capacity because repeated tension drives muscular and neural adaptation.",
         factors: [
-          { factor: "Training frequency", relativeWeight: 0.45, optimal: "3-4 sessions per week", eighty20: "2-3 sessions per week", commentary: "Most adaptation comes from showing up consistently each week.", defaultScore: 70 },
-          { factor: "Training intensity", relativeWeight: 0.25, optimal: "70-85% 1RM per session", eighty20: "60-75% 1RM per session", commentary: "Heavier work supports strength and bone density, while moderate loads still deliver substantial benefit.", defaultScore: 70 },
-          { factor: "Progressive overload", relativeWeight: 0.25, optimal: "Increase load or volume weekly", eighty20: "Increase load or reps every 2-3 weeks", commentary: "Progressive overload is what keeps training effective over time rather than merely repetitive.", defaultScore: 70 },
-          { factor: "Strength-specific movements", relativeWeight: 0.05, optimal: "3-5 sets per session, 4 sessions weekly", eighty20: "2-3 sets per session, 2-3 sessions weekly", commentary: "Heavy lower-rep lifts can add extra strength gains on top of general resistance training.", defaultScore: 65 },
-          { factor: "Power / explosiveness", relativeWeight: 0.05, optimal: "1-3 sessions per week", eighty20: "1-2 sessions per week", commentary: "Power work can improve coordination and athleticism, but it has a smaller overall contribution than the basics.", defaultScore: 60 }
+          { factor: "Weekly resistance training volume", relativeWeight: 18 / 47, optimal: "60-120 minutes per week across 3-4 sessions", eighty20: "30-60 minutes per week across 2-3 sessions", commentary: "Most resistance-training benefit comes from doing enough weekly work consistently, not from any single perfect workout.", defaultScore: 70 },
+          { factor: "Training intensity", relativeWeight: 10 / 47, optimal: "70-85% 1RM for most working sets", eighty20: "60-75% 1RM", commentary: "Moderate-to-heavy loading supports strength and muscle gains, while slightly lighter work still covers most of the benefit.", defaultScore: 70 },
+          { factor: "Progressive overload", relativeWeight: 9 / 47, optimal: "Increase load or total volume weekly", eighty20: "Increase load or reps every 2-3 weeks", commentary: "Progressive overload is what keeps resistance training effective over time rather than merely repetitive.", defaultScore: 70 },
+          { factor: "Strength-specific movements", relativeWeight: 4 / 47, optimal: "3-5 sets of compound lifts per session", eighty20: "2-3 sets per session", commentary: "Compound strength work adds extra benefit for strength and bone-loading on top of general resistance training.", defaultScore: 65 },
+          { factor: "Power / explosiveness", relativeWeight: 6 / 47, optimal: "1-3 sessions per week including jumps, throws, or fast lifts", eighty20: "1 session per week", commentary: "Power work supports athleticism, coordination and healthy ageing, but matters less than consistently covering the basics.", defaultScore: 60 }
         ]
       },
       {
         name: "Cardio",
-        weight: 0.3,
-        commentary: "Cardio is sustained or interval-based work that challenges the heart, lungs and aerobic energy systems. It improves cardiovascular fitness, work capacity and metabolic health because regular aerobic demand strengthens oxygen delivery and use.",
+        weight: 0.26,
+        commentary: "Cardio covers sustained and interval-based work that challenges the heart, lungs and aerobic energy systems. It improves cardiovascular fitness, work capacity and metabolic health because regular aerobic demand strengthens oxygen delivery and use.",
         factors: [
-          { factor: "Endurance / steady-state", relativeWeight: 0.6, optimal: "3-5 sessions per week, 30-60 minutes", eighty20: "2-3 sessions per week, 20-40 minutes", commentary: "Steady-state work is a major driver of cardiovascular health, stamina and day-to-day energy.", defaultScore: 70 },
-          { factor: "HIIT", relativeWeight: 0.4, optimal: "2-3 sessions per week, 20-30 minute intervals", eighty20: "1-2 sessions per week", commentary: "Intervals are efficient for improving fitness, but they carry more fatigue and do not need to dominate the programme.", defaultScore: 65 }
+          { factor: "Endurance / steady-state cardio", relativeWeight: 16 / 26, optimal: "150-300 minutes/week moderate cardio (approx 7,000-10,000 steps/day equivalent)", eighty20: "75-150 minutes/week moderate cardio (approx 5,000-7,000 steps/day equivalent)", commentary: "Steady-state movement is a major driver of cardiovascular health, stamina and baseline daily activity.", defaultScore: 70 },
+          { factor: "HIIT / vigorous cardio", relativeWeight: 10 / 26, optimal: "2-3 sessions per week of interval work (~20-30 minutes)", eighty20: "1-2 sessions per week", commentary: "Vigorous work is efficient for improving fitness, but it creates more fatigue and does not need to dominate the programme.", defaultScore: 65 }
+        ]
+      },
+      {
+        name: "Lifestyle Activity",
+        weight: 0.1,
+        commentary: "Lifestyle activity covers how much you move outside formal exercise. Reducing sedentary time helps support cardiometabolic health, energy expenditure and general physical function.",
+        factors: [
+          { factor: "Sedentary time", relativeWeight: 1, optimal: "<7 hours/day sitting; frequent movement breaks", eighty20: "<9 hours/day sitting", commentary: "Long uninterrupted sitting is associated with worse health outcomes, so regular movement through the day matters even if you exercise.", defaultScore: 65 }
         ]
       },
       {
         name: "Functional Movement",
-        weight: 0.2,
-        commentary: "Functional movement includes mobility, flexibility, balance and coordination work that helps support movement quality and healthy ageing. It improves stability, range of motion and confidence in real-world movement because repeated practice refines motor control and tissue tolerance.",
+        weight: 0.17,
+        commentary: "Functional movement includes mobility, flexibility, balance and coordination work that supports movement quality and healthy ageing. It improves stability, range of motion and confidence in real-world movement because repeated practice refines motor control and tissue tolerance.",
         factors: [
-          { factor: "Flexibility / mobility", relativeWeight: 0.6, optimal: "10-15 minutes most days", eighty20: "5-10 minutes most days", commentary: "Regular mobility work supports range of motion, movement quality and injury resilience.", defaultScore: 65 },
-          { factor: "Balance / coordination / skill work", relativeWeight: 0.4, optimal: "2-3 sessions per week", eighty20: "1 session per week", commentary: "Balance and coordination work support stability, control and long-term functional fitness.", defaultScore: 60 }
+          { factor: "Flexibility / mobility", relativeWeight: 10 / 17, optimal: "10-15 minutes most days", eighty20: "5-10 minutes most days", commentary: "Regular mobility work supports range of motion, movement quality and long-term movement resilience.", defaultScore: 65 },
+          { factor: "Balance / coordination / skill work", relativeWeight: 7 / 17, optimal: "2-3 sessions per week", eighty20: "1 session per week", commentary: "Balance, coordination and skill work support stability, control and long-term functional fitness.", defaultScore: 60 }
         ]
       }
     ]
@@ -1099,19 +1110,21 @@ const categories = {
     scoreElementId: "mental-score",
     tableBodyId: "mental-table-body",
     factors: [
-      { factor: "Stress management", weight: 0.3, optimal: "Daily deliberate stress reduction (mindfulness exercises, meditation, creative outlets, leisure activities)", eighty20: "3-4 deliberate sessions per week", commentary: "Managing stress supports mood, focus, sleep and long-term health; practices such as mindfulness, leisure and reflective downtime can all help.", defaultScore: 75 },
-      { factor: "Social connection", weight: 0.3, optimal: "Meaningful contact with friends or family several times weekly", eighty20: "At least once per week", commentary: "Positive relationships provide support, perspective and a strong foundation for emotional wellbeing.", defaultScore: 75 },
-      { factor: "Work-life balance", weight: 0.25, optimal: "Structured work with regular downtime and leisure", eighty20: "Some planned leisure each week", commentary: "Better work-life balance helps prevent burnout and supports both mental and physical resilience.", defaultScore: 75 },
-      { factor: "Outdoor / nature exposure", weight: 0.15, optimal: "At least 30 minutes outside in daylight daily", eighty20: "At least 10 minutes daily or 1 hour weekly over 3 sessions", commentary: "Time outdoors can support circadian rhythm, mood and stress regulation.", defaultScore: 75 }
+      { factor: "Social Connection", weight: 0.4, optimal: "Meaningful contact with friends or family several times weekly", eighty20: "At least once per week", commentary: "Positive relationships provide support, perspective and a strong foundation for emotional wellbeing.", defaultScore: 75 },
+      { factor: "Occupational Load (Working Hours)", weight: 0.2, optimal: "<=40 hours per week", eighty20: "<=50 hours per week", commentary: "Sustainable working hours help reduce burnout risk and leave more room for recovery, relationships and restorative routines.", defaultScore: 75 },
+      { factor: "Social Media Limitation", weight: 0.15, optimal: "<=60 minutes/day", eighty20: "<=2 hours/day", commentary: "Keeping social media use contained can support attention, mood stability and better use of time for higher-value activities.", defaultScore: 75 },
+      { factor: "Nature Exposure", weight: 0.15, optimal: "At least 30 minutes outside in daylight daily", eighty20: "At least 10 minutes daily or 1 hour weekly over 3 sessions", commentary: "Time outdoors can support circadian rhythm, mood and stress regulation.", defaultScore: 75 },
+      { factor: "Stress Management", weight: 0.07, optimal: "Daily deliberate stress reduction (mindfulness, meditation, creative outlets, leisure activities)", eighty20: "3-4 deliberate sessions per week", commentary: "Managing stress supports mood, focus, sleep and long-term health; deliberate down-regulation practices help build resilience.", defaultScore: 75 },
+      { factor: "Environmental Noise", weight: 0.03, optimal: "Quiet living and working environment", eighty20: "Minimize chronic noise exposure", commentary: "Reducing chronic noise exposure can support concentration, lower stress load and improve day-to-day mental comfort.", defaultScore: 75 }
     ]
   }
 };
 
 const overallCategories = [
-  { key: "recovery", weight: 0.25 },
-  { key: "nutrition", weight: 0.25 },
-  { key: "activity", weight: 0.25 },
-  { key: "mental", weight: 0.25 }
+  { key: "recovery", weight: 0.3 },
+  { key: "mental", weight: 0.3 },
+  { key: "activity", weight: 0.2 },
+  { key: "nutrition", weight: 0.2 }
 ];
 
 const expandedOverallGroups = new Set();
@@ -1128,6 +1141,87 @@ const workbookSheetNames = {
   activity: "Activity",
   mental: "Mental"
 };
+
+const storageKey = "health-score-app-state";
+
+function loadStoredAppState() {
+  try {
+    const raw = window.localStorage.getItem(storageKey);
+    if (!raw) {
+      return null;
+    }
+
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === "object" ? parsed : null;
+  } catch (error) {
+    return null;
+  }
+}
+
+const storedAppState = loadStoredAppState();
+
+function getStoredScore(categoryKey, index, fallback) {
+  const savedScore = storedAppState?.scores?.[categoryKey]?.[index];
+  return savedScore == null ? fallback : clampScore(Number.parseFloat(savedScore));
+}
+
+function applyStoredUiState() {
+  if (!storedAppState) {
+    return;
+  }
+
+  if (storedAppState.darkMode) {
+    document.body.classList.add("dark-mode");
+  }
+
+  expandedOverallGroups.clear();
+  (storedAppState.expandedOverallGroups || []).forEach((key) => {
+    if (categories[key]?.groups) {
+      expandedOverallGroups.add(key);
+    }
+  });
+
+  const defaultExpandedGroups = Object.entries(categories)
+    .filter(([, category]) => category.groups)
+    .flatMap(([key, category]) => category.groups.map((group) => `${key}:${group.name}`));
+
+  expandedCategoryGroups.clear();
+  const savedCategoryGroups = Array.isArray(storedAppState.expandedCategoryGroups)
+    ? storedAppState.expandedCategoryGroups
+    : defaultExpandedGroups;
+
+  savedCategoryGroups.forEach((key) => {
+    const [categoryKey, groupName] = key.split(":");
+    if (categories[categoryKey]?.groups?.some((group) => group.name === groupName)) {
+      expandedCategoryGroups.add(key);
+    }
+  });
+}
+
+function saveAppState() {
+  try {
+    const scores = {};
+
+    Object.entries(categories).forEach(([categoryKey, category]) => {
+      const weightedFactors = getWeightedFactors(category);
+      scores[categoryKey] = weightedFactors.map((factor) => readInputScore(categoryKey, factor.index));
+    });
+
+    const activeTabButton = document.querySelector(".tab-button.active");
+    const aboutPanel = document.getElementById("about-panel");
+
+    window.localStorage.setItem(storageKey, JSON.stringify({
+      scores,
+      activeTab: activeTabButton?.dataset.tab || "overall",
+      darkMode: document.body.classList.contains("dark-mode"),
+      aboutOpen: aboutPanel?.classList.contains("is-open") || false,
+      expandedOverallGroups: Array.from(expandedOverallGroups),
+      expandedCategoryGroups: Array.from(expandedCategoryGroups)
+    }));
+  } catch (error) {
+    // Ignore storage failures so the static app remains usable.
+  }
+}
 
 function clampScore(value) {
   return Number.isFinite(value) ? Math.min(100, Math.max(0, value)) : 0;
@@ -1185,7 +1279,7 @@ function buildFlatRows(categoryKey, category, tbody) {
       <td>
         <div class="score-stepper">
           <button type="button" data-step="-5">-</button>
-          <input type="number" min="0" max="100" step="any" value="${factor.defaultScore}" data-category="${categoryKey}" data-index="${index}">
+          <input type="number" min="0" max="100" step="any" value="${getStoredScore(categoryKey, index, factor.defaultScore)}" data-category="${categoryKey}" data-index="${index}">
           <button type="button" data-step="5">+</button>
         </div>
       </td>
@@ -1225,7 +1319,7 @@ function buildGroupedRows(categoryKey, category, tbody, weightedFactors) {
           <td>
             <div class="score-stepper">
               <button type="button" data-step="-5">-</button>
-              <input type="number" min="0" max="100" step="any" value="${factor.defaultScore}" data-category="${categoryKey}" data-index="${factor.index}">
+              <input type="number" min="0" max="100" step="any" value="${getStoredScore(categoryKey, factor.index, factor.defaultScore)}" data-category="${categoryKey}" data-index="${factor.index}">
               <button type="button" data-step="5">+</button>
             </div>
           </td>
@@ -1312,6 +1406,17 @@ function escapeHtml(value) {
 
 function formatPercent(value) {
   return `${value.toFixed(1)}%`;
+}
+
+function getOverallCategoryTooltip(categoryKey) {
+  const tooltips = {
+    recovery: "Recovery is weighted highly because the research summary you provided treats sleep as a primary survival driver and a major predictor of quality of life. It is not pushed even higher here because the model still preserves the benefit of spreading effort across multiple pillars rather than treating health as a single-variable problem.",
+    mental: "Mental is weighted highly because the research summary you provided identifies social connection as a major survival determinant with quality-of-life effects that remain strong even after adjusting for other factors. Its weight reflects that outsized role while still keeping room for the physical and behavioural pillars that work alongside it.",
+    activity: "Activity keeps a substantial weight because the research summary you provided links combined aerobic and resistance training, cardiorespiratory fitness and baseline movement to large mortality and chronic-disease benefits. It sits below Recovery and Mental here to reflect the stronger survival signal assigned to sleep and social connection, not because activity is a minor factor.",
+    nutrition: "Nutrition remains meaningfully weighted because the research summary you provided still treats it as essential for metabolic health and long-term outcomes, especially where ultra-processed foods are high and diet quality is poor. Its role here reflects both its direct contribution and the added value of making modest gains across all pillars rather than chasing perfection in one area."
+  };
+
+  return tooltips[categoryKey] || "";
 }
 
 function syncOverallScoreDisplays() {
@@ -1622,6 +1727,7 @@ function renderOverallRows(tbody) {
 
   overallCategories.forEach((overallItem) => {
     const category = categories[overallItem.key];
+    const categoryTooltip = getOverallCategoryTooltip(overallItem.key);
     const categoryScore = Number.parseFloat(document.getElementById(category.scoreElementId).textContent) / 100 || 0;
     const categoryContribution = categoryScore * overallItem.weight;
     overallTotal += categoryContribution;
@@ -1629,7 +1735,7 @@ function renderOverallRows(tbody) {
     const parentRow = document.createElement("tr");
     parentRow.className = "overall-parent-row";
     parentRow.innerHTML = `
-      <td>${category.groups ? `<button class="overall-toggle" type="button" data-category-key="${overallItem.key}" aria-expanded="${expandedOverallGroups.has(overallItem.key) ? "true" : "false"}"><span class="overall-toggle-icon">${expandedOverallGroups.has(overallItem.key) ? "-" : "+"}</span><span>${category.title}</span></button>` : category.title}</td>
+      <td class="tooltip-cell" data-tooltip="${categoryTooltip}">${category.groups ? `<button class="overall-toggle" type="button" data-category-key="${overallItem.key}" aria-expanded="${expandedOverallGroups.has(overallItem.key) ? "true" : "false"}"><span class="overall-toggle-icon">${expandedOverallGroups.has(overallItem.key) ? "-" : "+"}</span><span>${category.title}</span></button>` : category.title}</td>
       <td class="readonly-cell">${Math.round(overallItem.weight * 100)}%</td>
       <td class="readonly-cell">${(categoryScore * 100).toFixed(1)}%</td>
       <td class="readonly-cell">${(categoryContribution * 100).toFixed(1)}%</td>
@@ -1674,17 +1780,25 @@ function updateOverallScore() {
 function updateAllScores() {
   Object.keys(categories).forEach(updateCategoryScore);
   updateOverallScore();
+  saveAppState();
+}
+
+function setActiveTab(tabKey) {
+  const targetTab = document.querySelector(`.tab-button[data-tab="${tabKey}"]`) ? tabKey : "overall";
+  const buttons = document.querySelectorAll(".tab-button");
+  const panels = document.querySelectorAll(".tab-panel");
+
+  buttons.forEach((item) => item.classList.toggle("active", item.dataset.tab === targetTab));
+  panels.forEach((panel) => panel.classList.toggle("active", panel.id === `panel-${targetTab}`));
 }
 
 function setupTabs() {
   const buttons = document.querySelectorAll(".tab-button");
-  const panels = document.querySelectorAll(".tab-panel");
 
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
-      const target = button.dataset.tab;
-      buttons.forEach((item) => item.classList.toggle("active", item === button));
-      panels.forEach((panel) => panel.classList.toggle("active", panel.id === `panel-${target}`));
+      setActiveTab(button.dataset.tab);
+      saveAppState();
     });
   });
 }
@@ -1736,6 +1850,7 @@ function setupOverallToggles() {
     }
 
     updateOverallScore();
+    saveAppState();
   });
 }
 
@@ -1790,15 +1905,26 @@ function setupSettingsActions() {
   toggleAboutButton.addEventListener("click", () => {
     const isOpen = aboutPanel.classList.toggle("is-open");
     toggleAboutButton.textContent = isOpen ? "Hide About" : "Open About";
+    saveAppState();
   });
 
   darkModeButton.addEventListener("click", () => {
     const isDark = document.body.classList.toggle("dark-mode");
     darkModeButton.classList.toggle("is-active", isDark);
     darkModeButton.textContent = isDark ? "Disable Dark Mode" : "Enable Dark Mode";
+    saveAppState();
   });
+
+  const isDark = document.body.classList.contains("dark-mode");
+  darkModeButton.classList.toggle("is-active", isDark);
+  darkModeButton.textContent = isDark ? "Disable Dark Mode" : "Enable Dark Mode";
+
+  const isAboutOpen = Boolean(storedAppState?.aboutOpen);
+  aboutPanel.classList.toggle("is-open", isAboutOpen);
+  toggleAboutButton.textContent = isAboutOpen ? "Hide About" : "Open About";
 }
 
+applyStoredUiState();
 Object.keys(categories).forEach(renderCategoryTable);
 setupTabs();
 setupInputs();
@@ -1806,6 +1932,7 @@ setupOverallToggles();
 setupCategoryToggles();
 setupWorkbookActions();
 setupSettingsActions();
+setActiveTab(storedAppState?.activeTab || "overall");
 updateAllScores();
 </script>
 </body>
