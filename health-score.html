@@ -155,6 +155,24 @@
     text-align: right;
   }
 
+  .score-card.split-score {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    min-width: 320px;
+    text-align: left;
+  }
+
+  .score-metric {
+    flex: 1 1 0;
+  }
+
+  .score-divider {
+    width: 1px;
+    background: var(--border-strong);
+    opacity: 0.9;
+  }
+
   .score-label {
     display: block;
     margin-bottom: 6px;
@@ -313,8 +331,8 @@
 
   td:nth-child(5),
   th:nth-child(5) {
-    width: 12%;
-    min-width: 132px;
+    width: 14%;
+    min-width: 156px;
     text-align: center;
   }
 
@@ -532,7 +550,7 @@
   .score-stepper {
     display: inline-flex;
     align-items: stretch;
-    width: min(100%, 124px);
+    width: min(100%, 148px);
     overflow: hidden;
     border: 1px solid var(--border-strong);
     border-radius: var(--radius-control);
@@ -597,6 +615,74 @@
     margin-bottom: 24px;
   }
 
+  .suggestions-section {
+    margin-top: 24px;
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--surface-soft);
+  }
+
+  .suggestions-section h2,
+  .suggestions-section h3,
+  .suggestions-section p {
+    margin: 0;
+  }
+
+  .suggestions-section h2 {
+    margin-bottom: 8px;
+  }
+
+  .suggestions-section > p {
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .suggestions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 18px;
+  }
+
+  .suggestion-card {
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: var(--surface);
+  }
+
+  .suggestion-card h3 {
+    margin-bottom: 8px;
+  }
+
+  .suggestion-meta {
+    display: grid;
+    gap: 6px;
+    color: var(--muted);
+    font-size: 0.94rem;
+  }
+
+  .suggestion-meta strong,
+  .suggestions-section > p strong {
+    color: var(--text);
+    font-weight: 700;
+  }
+
+  .suggestion-path {
+    margin-bottom: 12px;
+    color: var(--accent-strong);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .suggestions-empty {
+    margin-top: 16px;
+    color: var(--muted);
+  }
+
   .about-section h3 {
     margin: 0 0 10px;
   }
@@ -622,6 +708,10 @@
       text-align: left;
     }
 
+    .score-card.split-score {
+      min-width: 0;
+    }
+
     .header-side {
       width: 100%;
       align-items: flex-start;
@@ -633,6 +723,10 @@
 
     .tab-panel {
       padding: 20px;
+    }
+
+    .suggestions-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
@@ -656,6 +750,10 @@
 
     table {
       font-size: 0.88rem;
+    }
+
+    .suggestions-grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>
@@ -698,6 +796,12 @@
         <tbody></tbody>
       </table>
     </div>
+
+    <section class="suggestions-section" aria-labelledby="overall-suggestions-heading">
+      <h2 id="overall-suggestions-heading">Suggestions</h2>
+      <p id="overall-suggestions-summary">Your overall score could be improved by 0.0% by maxing out the most impactful individual items.</p>
+      <div class="suggestions-grid" id="overall-suggestions-list"></div>
+    </section>
   </section>
 
   <section class="tab-panel" id="panel-recovery">
@@ -706,9 +810,16 @@
         <h2 class="info-trigger">Recovery<span class="icon" tabindex="0" data-tooltip="Recovery is the set of habits that allows your body and mind to restore performance, adapt to stress and stay resilient, with sleep doing most of the heavy lifting. Strong recovery supports energy, mood, immunity, training adaptation and cognitive performance because sleep and circadian stability help regulate hormones, tissue repair and nervous-system recovery.">i</span></h2>
         <p>Recovery is led by sleep quality and duration, which account for most of the body’s ability to rest, repair and perform well. Other practices can help at the margins, but they are far less influential than getting sleep and basic recovery habits right.</p>
       </div>
-      <div class="score-card">
-        <span class="score-label">Recovery Score</span>
-        <span class="score-value" id="recovery-score">0%</span>
+      <div class="score-card split-score">
+        <div class="score-metric">
+          <span class="score-label">Recovery Score</span>
+          <span class="score-value" id="recovery-score">0%</span>
+        </div>
+        <div class="score-divider" aria-hidden="true"></div>
+        <div class="score-metric">
+          <span class="score-label">Overall Score</span>
+          <span class="score-value" data-overall-score-display>0%</span>
+        </div>
       </div>
     </div>
 
@@ -735,9 +846,16 @@
         <h2 class="info-trigger">Nutrition<span class="icon" tabindex="0" data-tooltip="Nutrition is the quality, quantity and timing of food and fluid intake that supports health and day-to-day function. Good nutrition helps body composition, energy stability, recovery, metabolic health and long-term disease risk because food provides the energy, protein, fibre and micronutrients required for repair, regulation and performance.">i</span></h2>
         <p>Nutrition supports energy, performance, recovery and long-term health. This tab focuses on broad, evidence-informed habits that matter most for general wellbeing. Aim for consistency first, then refine details if you need to.</p>
       </div>
-      <div class="score-card">
-        <span class="score-label">Nutrition Score</span>
-        <span class="score-value" id="nutrition-score">0%</span>
+      <div class="score-card split-score">
+        <div class="score-metric">
+          <span class="score-label">Nutrition Score</span>
+          <span class="score-value" id="nutrition-score">0%</span>
+        </div>
+        <div class="score-divider" aria-hidden="true"></div>
+        <div class="score-metric">
+          <span class="score-label">Overall Score</span>
+          <span class="score-value" data-overall-score-display>0%</span>
+        </div>
       </div>
     </div>
 
@@ -764,9 +882,16 @@
         <h2 class="info-trigger">Activity<span class="icon" tabindex="0" data-tooltip="Activity covers purposeful physical movement, including resistance training, cardio and functional movement. It improves cardiovascular fitness, strength, bone density, insulin sensitivity, mobility and long-term independence because repeated physical demand drives adaptation across muscles, bones, the heart, lungs and nervous system.">i</span></h2>
         <p>Physical activity has wide benefits for health and wellbeing. You do not need to do everything at once. Build a balanced mix over time, prioritise consistency, and choose forms of training you can stick with.</p>
       </div>
-      <div class="score-card">
-        <span class="score-label">Activity Score</span>
-        <span class="score-value" id="activity-score">0%</span>
+      <div class="score-card split-score">
+        <div class="score-metric">
+          <span class="score-label">Activity Score</span>
+          <span class="score-value" id="activity-score">0%</span>
+        </div>
+        <div class="score-divider" aria-hidden="true"></div>
+        <div class="score-metric">
+          <span class="score-label">Overall Score</span>
+          <span class="score-value" data-overall-score-display>0%</span>
+        </div>
       </div>
     </div>
 
@@ -793,9 +918,16 @@
         <h2 class="info-trigger">Mental<span class="icon" tabindex="0" data-tooltip="Mental wellbeing covers habits and conditions that support resilience, emotional stability, motivation and day-to-day quality of life. Strong mental wellbeing improves stress tolerance, mood, attention and social functioning because healthy routines, relationships and restorative environments help regulate the nervous system and reduce chronic stress load.">i</span></h2>
         <p>Mental wellbeing is a core part of overall vitality, influencing energy, motivation and resilience. This tab focuses on broad habits that support general wellbeing rather than diagnosis or personalised mental-health care.</p>
       </div>
-      <div class="score-card">
-        <span class="score-label">Mental Score</span>
-        <span class="score-value" id="mental-score">0%</span>
+      <div class="score-card split-score">
+        <div class="score-metric">
+          <span class="score-label">Mental Score</span>
+          <span class="score-value" id="mental-score">0%</span>
+        </div>
+        <div class="score-divider" aria-hidden="true"></div>
+        <div class="score-metric">
+          <span class="score-label">Overall Score</span>
+          <span class="score-value" data-overall-score-display>0%</span>
+        </div>
       </div>
     </div>
 
@@ -967,7 +1099,7 @@ const categories = {
     scoreElementId: "mental-score",
     tableBodyId: "mental-table-body",
     factors: [
-      { factor: "Stress management", weight: 0.3, optimal: "Daily deliberate stress reduction", eighty20: "3-4 deliberate sessions per week", commentary: "Managing stress supports mood, focus, sleep and long-term health; practices such as mindfulness, leisure and reflective downtime can all help.", defaultScore: 75 },
+      { factor: "Stress management", weight: 0.3, optimal: "Daily deliberate stress reduction (mindfulness exercises, meditation, creative outlets, leisure activities)", eighty20: "3-4 deliberate sessions per week", commentary: "Managing stress supports mood, focus, sleep and long-term health; practices such as mindfulness, leisure and reflective downtime can all help.", defaultScore: 75 },
       { factor: "Social connection", weight: 0.3, optimal: "Meaningful contact with friends or family several times weekly", eighty20: "At least once per week", commentary: "Positive relationships provide support, perspective and a strong foundation for emotional wellbeing.", defaultScore: 75 },
       { factor: "Work-life balance", weight: 0.25, optimal: "Structured work with regular downtime and leisure", eighty20: "Some planned leisure each week", commentary: "Better work-life balance helps prevent burnout and supports both mental and physical resilience.", defaultScore: 75 },
       { factor: "Outdoor / nature exposure", weight: 0.15, optimal: "At least 30 minutes outside in daylight daily", eighty20: "At least 10 minutes daily or 1 hour weekly over 3 sessions", commentary: "Time outdoors can support circadian rhythm, mood and stress regulation.", defaultScore: 75 }
@@ -1167,6 +1299,74 @@ function getCategoryState(categoryKey) {
     rows,
     groups
   };
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function formatPercent(value) {
+  return `${value.toFixed(1)}%`;
+}
+
+function syncOverallScoreDisplays() {
+  const overallScoreText = document.getElementById("overall-score").textContent;
+  document.querySelectorAll("[data-overall-score-display]").forEach((node) => {
+    node.textContent = overallScoreText;
+  });
+}
+
+function getTopItemSuggestions(limit = 6) {
+  return overallCategories
+    .flatMap((overallItem) => {
+      const category = categories[overallItem.key];
+      return getWeightedFactors(category).map((factor) => {
+        const currentScore = readInputScore(overallItem.key, factor.index);
+        return {
+          categoryTitle: category.title,
+          groupName: factor.group || "",
+          factorName: factor.factor,
+          currentScore,
+          optimal: factor.optimal,
+          additionalOverallPoints: ((100 - currentScore) / 100) * factor.totalWeight * overallItem.weight * 100
+        };
+      });
+    })
+    .sort((a, b) => b.additionalOverallPoints - a.additionalOverallPoints || a.currentScore - b.currentScore)
+    .slice(0, limit);
+}
+
+function renderOverallSuggestions() {
+  const summary = document.getElementById("overall-suggestions-summary");
+  const list = document.getElementById("overall-suggestions-list");
+  const suggestions = getTopItemSuggestions(6);
+
+  const totalOpportunity = suggestions.reduce((sum, suggestion) => sum + suggestion.additionalOverallPoints, 0);
+  const currentOverallScore = Number.parseFloat(document.getElementById("overall-score").textContent) || 0;
+  const projectedOverallScore = Math.min(100, currentOverallScore + totalOpportunity);
+  summary.innerHTML = `Your overall score could be improved by <strong>${formatPercent(totalOpportunity)}</strong> to <strong>${formatPercent(projectedOverallScore)}</strong> by maxing out the most impactful individual items.`;
+
+  if (!suggestions.length) {
+    list.innerHTML = '<p class="suggestions-empty">No item suggestions are available yet.</p>';
+    return;
+  }
+
+  list.innerHTML = suggestions.map((suggestion) => `
+    <article class="suggestion-card">
+      <div class="suggestion-path">${escapeHtml(suggestion.categoryTitle)}${suggestion.groupName ? ` / ${escapeHtml(suggestion.groupName)}` : ""}</div>
+      <h3>${escapeHtml(suggestion.factorName)}</h3>
+      <div class="suggestion-meta">
+        <span>Current score: ${formatPercent(suggestion.currentScore)}</span>
+        <span>Requirement: ${escapeHtml(suggestion.optimal)}</span>
+        <span>Possible gain: <strong>${formatPercent(suggestion.additionalOverallPoints)}</strong></span>
+      </div>
+    </article>
+  `).join("");
 }
 
 function escapeXml(value) {
@@ -1461,12 +1661,14 @@ function renderOverallRows(tbody) {
   });
 
   document.getElementById("overall-score").textContent = `${(overallTotal * 100).toFixed(1)}%`;
+  syncOverallScoreDisplays();
 }
 
 function updateOverallScore() {
   const tbody = document.querySelector("#overall-table tbody");
   tbody.innerHTML = "";
   renderOverallRows(tbody);
+  renderOverallSuggestions();
 }
 
 function updateAllScores() {
