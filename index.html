@@ -1021,8 +1021,7 @@ const categories = {
         weight: 0.95,
         commentary: "Sleep is the main driver of recovery because this is when the body performs most of its repair, hormonal regulation, nervous-system recovery and memory consolidation. Better sleep improves energy, mood, immunity, training adaptation and long-term health.",
         factors: [
-          { factor: "Sleep duration", relativeWeight: 45 / 95, optimal: "7-9 hours of uninterrupted sleep", eighty20: "6.5-7 hours", commentary: "Enough total sleep is the main recovery driver because it gives the body time for repair, hormonal regulation and nervous-system recovery.", defaultScore: 80 },
-          { factor: "Sleep Quality / Continuity", relativeWeight: 10 / 95, optimal: "Sleep efficiency >85% or <1 unrefreshed night/week", eighty20: "N/A", commentary: "Sleep quality matters alongside duration; frequent awakenings or routinely unrefreshing sleep can blunt the benefit of enough time in bed.", defaultScore: 80 },
+          { factor: "Sleep duration / quality", relativeWeight: 55 / 95, optimal: "7-9 hours of uninterrupted, refreshing sleep", eighty20: "6.5-7 hours with generally good continuity and most nights feeling reasonably refreshed", commentary: "Sleep quantity and sleep quality work together: the main benefit comes from getting enough total sleep and sleeping well enough that it is actually restorative.", defaultScore: 80 },
           { factor: "Morning light exposure", relativeWeight: 10 / 95, optimal: "10-15 minutes outdoors within 1 hour of waking", eighty20: "5 minutes within 2-3 hours of waking", commentary: "Morning light helps anchor circadian rhythm, improving daytime alertness and making sleep onset easier later.", defaultScore: 80 },
           { factor: "Alcohol timing", relativeWeight: 7 / 95, optimal: "Avoid alcohol within 3-4 hours of bed", eighty20: "Occasional moderate intake >=2 hours before bed", commentary: "Alcohol can fragment sleep and reduce sleep quality even if it initially makes you feel sleepy.", defaultScore: 80 },
           { factor: "Consistent wake time", relativeWeight: 7 / 95, optimal: "Wake time consistent within +/-15 minutes daily", eighty20: "Wake time within +/-30 minutes", commentary: "A stable wake time helps set the sleep-wake cycle and often improves sleep quality more reliably than chasing a perfect bedtime alone.", defaultScore: 80 },
@@ -1073,8 +1072,8 @@ const categories = {
           { factor: "Weekly resistance training volume", relativeWeight: 18 / 47, optimal: "60-120 minutes per week across 3-4 sessions", eighty20: "30-60 minutes per week across 2-3 sessions", commentary: "Most resistance-training benefit comes from doing enough weekly work consistently, not from any single perfect workout.", defaultScore: 70 },
           { factor: "Training intensity", relativeWeight: 10 / 47, optimal: "70-85% 1RM for most working sets", eighty20: "60-75% 1RM", commentary: "Moderate-to-heavy loading supports strength and muscle gains, while slightly lighter work still covers most of the benefit.", defaultScore: 70 },
           { factor: "Progressive overload", relativeWeight: 9 / 47, optimal: "Increase load or total volume weekly", eighty20: "Increase load or reps every 2-3 weeks", commentary: "Progressive overload is what keeps resistance training effective over time rather than merely repetitive.", defaultScore: 70 },
-          { factor: "Strength-specific movements", relativeWeight: 4 / 47, optimal: "3-5 sets of compound lifts per session", eighty20: "2-3 sets per session", commentary: "Compound strength work adds extra benefit for strength and bone-loading on top of general resistance training.", defaultScore: 65 },
-          { factor: "Power / explosiveness", relativeWeight: 6 / 47, optimal: "1-3 sessions per week including jumps, throws, or fast lifts", eighty20: "1 session per week", commentary: "Power work supports athleticism, coordination and healthy ageing, but matters less than consistently covering the basics.", defaultScore: 60 }
+          { factor: "Power / explosiveness", relativeWeight: 6 / 47, optimal: "1-3 sessions per week including jumps, throws, or fast lifts", eighty20: "1 session per week", commentary: "Power work supports athleticism, coordination and healthy ageing, but matters less than consistently covering the basics.", defaultScore: 60 },
+          { factor: "Strength-specific movements", relativeWeight: 4 / 47, optimal: "3-5 sets of compound lifts per session", eighty20: "2-3 sets per session", commentary: "Compound strength work adds extra benefit for strength and bone-loading on top of general resistance training.", defaultScore: 65 }
         ]
       },
       {
@@ -1087,20 +1086,20 @@ const categories = {
         ]
       },
       {
-        name: "Lifestyle Activity",
-        weight: 0.1,
-        commentary: "Lifestyle activity covers how much you move outside formal exercise. Reducing sedentary time helps support cardiometabolic health, energy expenditure and general physical function.",
-        factors: [
-          { factor: "Sedentary time", relativeWeight: 1, optimal: "<7 hours/day sitting; frequent movement breaks", eighty20: "<9 hours/day sitting", commentary: "Long uninterrupted sitting is associated with worse health outcomes, so regular movement through the day matters even if you exercise.", defaultScore: 65 }
-        ]
-      },
-      {
         name: "Functional Movement",
         weight: 0.17,
         commentary: "Functional movement includes mobility, flexibility, balance and coordination work that supports movement quality and healthy ageing. It improves stability, range of motion and confidence in real-world movement because repeated practice refines motor control and tissue tolerance.",
         factors: [
           { factor: "Flexibility / mobility", relativeWeight: 10 / 17, optimal: "10-15 minutes most days", eighty20: "5-10 minutes most days", commentary: "Regular mobility work supports range of motion, movement quality and long-term movement resilience.", defaultScore: 65 },
           { factor: "Balance / coordination / skill work", relativeWeight: 7 / 17, optimal: "2-3 sessions per week", eighty20: "1 session per week", commentary: "Balance, coordination and skill work support stability, control and long-term functional fitness.", defaultScore: 60 }
+        ]
+      },
+      {
+        name: "Lifestyle Activity",
+        weight: 0.1,
+        commentary: "Lifestyle activity covers how much you move outside formal exercise. Reducing sedentary time helps support cardiometabolic health, energy expenditure and general physical function.",
+        factors: [
+          { factor: "Sedentary time", relativeWeight: 1, optimal: "<7 hours/day sitting; frequent movement breaks", eighty20: "<9 hours/day sitting", commentary: "Long uninterrupted sitting is associated with worse health outcomes, so regular movement through the day matters even if you exercise.", defaultScore: 65 }
         ]
       }
     ]
