@@ -26,10 +26,6 @@ The Health Score Dashboard is designed to provide holistic, general, evidence-ba
 
 # In depth commentary
 
-# Health Score Dashboard — Reference Guide
-
-This document summarizes the health scoring framework: the categories, their weights, the "Optimal" vs "80/20" targets, and the explanatory info-tip commentary for each item.
-
 ## Overall Health Score
 
 > **Info tip:** This summary blends your Recovery, Mental, Activity and Nutrition scores into a single view so you can quickly see where your current habits are strongest, where the biggest deficits are, and which changes are most likely to improve both day-to-day vitality and broader long-term health.
